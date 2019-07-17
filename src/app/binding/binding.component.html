@@ -1,0 +1,19 @@
+<table style="width:100%" 
+  *ngIf='employees && employees.length'>
+<thead>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+</thead>
+<tbody>
+     <tr *ngFor='let employee of employees'>
+    <td>{{employee.fname}}</td>
+    <td>{{employee.lname}}</td>
+    <td>{{employee.age}}</td>     
+    </tr>
+</tbody>
+
+
+</table>

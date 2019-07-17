@@ -1,0 +1,35 @@
+<!--==========================
+  Header
+  ============================-->
+  <header id="header">
+        <div class="container">
+    
+          <div id="logo" class="pull-left">
+            <a href="#hero"><img src="../../assets/img/Official-Logo-2.png" height="50" width="100"/></a>
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!--<h1><a href="#hero">Regna</a></h1>-->
+          </div>
+    
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a class ="nav-link" [routerLink]="['/']">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <!--<li><a href="#services">Services</a></li>-->
+              <!--<li><a href="#portfolio">Products</a></li>-->
+              <!--<li><a href="#team">Team</a></li>-->
+              <li class="menu-has-children"><a class ="nav-link" [routerLink]="['products']">Products</a>
+                <ul>
+                  <li><a class ="nav-link" [routerLink]="['necklace']">Necklace</a></li>
+                  <li><a class ="nav-link" [routerLink]="['Bracelet']">Bracelet</a></li>
+                  <li><a class ="nav-link" [routerLink]="['Anklet']">Anklet</a></li>
+                  <li><a class ="nav-link" [routerLink]="['earrings']">Ear Rings</a></li>
+                  <li><a class ="nav-link" [routerLink]="['ringss']">rings</a></li>
+                </ul>
+              </li>
+              <li><a class ="nav-link" [routerLink]="['contact']">Contact Us</a></li>
+              <li><a class ="nav-link" [routerLink]="['login']">Login</a></li>
+              <li><a class ="nav-link" [routerLink]="['signup']">sign up</a></li>
+              <!--<li><a class ="nav-link" [routerLink]="['binding']">binding</a></li>-->           </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+      </header><!-- #header -->
