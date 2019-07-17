@@ -19,6 +19,7 @@ import { BindingComponent } from './binding/binding.component';
 //import { MiddleComponent } from './middle/middle.component';
 import {FormsModule} from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     LoginComponent,
     HomeComponent,
     BindingComponent,
+    ViewComponent,
     //MiddleComponent
   ],
   imports: [
