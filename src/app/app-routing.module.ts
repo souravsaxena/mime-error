@@ -14,6 +14,7 @@ import { AnkletComponent } from './anklet/anklet.component';
 import { EarringsComponent } from './earrings/earrings.component';
 import { RingsComponent } from './rings/rings.component';
 import { ContactComponent } from './contact/contact.component';
+import { AddressComponent } from './address/address.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path:'necklace',component:NecklaceComponent},
   {path:'bracelet',component:BraceletComponent},
   {path:'anklet',component:AnkletComponent},
+  {path:'address',component:AddressComponent},
   {path:'earrings',component:EarringsComponent},
   {path:'rings',component:RingsComponent},
   {path:'contact',component:ContactComponent},

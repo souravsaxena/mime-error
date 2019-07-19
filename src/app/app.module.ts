@@ -19,6 +19,7 @@ import { BindingComponent } from './binding/binding.component';
 //import { MiddleComponent } from './middle/middle.component';
 import {FormsModule} from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AddressComponent } from './address/address.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     LoginComponent,
     HomeComponent,
     BindingComponent,
+    AddressComponent,
     
     //MiddleComponent
   ],

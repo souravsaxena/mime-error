@@ -87,7 +87,7 @@ body {
   #header {
     padding: 30px 0;
     height: 92px;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -111,7 +111,7 @@ body {
   }
   
   #header #logo h1 a, #header #logo h1 a:hover {
-    color: #fff;
+    color:burlywood;
   }
   
   #header #logo img {
@@ -129,10 +129,10 @@ body {
   }
   
   #header.header-fixed {
-    background: rgba(52, 59, 64, 0.9);
+    background: rgba(36, 68, 90, 0.9);
     padding: 20px 0;
     height: 72px;
-    transition: all 0.5s;
+    transition: all 1.5s;
   }
   
   /*--------------------------------------------------------------
@@ -245,7 +245,7 @@ body {
   
   .nav-menu li {
     position: relative;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
   }
   
   .nav-menu > li {
@@ -301,7 +301,7 @@ body {
     padding: 0 8px 10px 8px;
     text-decoration: none;
     display: inline-block;
-    color: #fff;
+    color:rgb(228, 207, 207);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -336,11 +336,11 @@ body {
   
   .nav-menu ul {
     margin: 4px 0 0 0;
-    border: 1px solid #e7e7e7;
+    border: 1px solid #302222;
   }
   
   .nav-menu ul li {
-    background: #fff;
+    background: rgb(143, 102, 102);
   }
   
   .nav-menu ul li:first-child {
@@ -516,7 +516,7 @@ body {
   #about .about-container .title {
     color: #333;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 50px;
   }
   
   @media (max-width: 768px) {
@@ -526,7 +526,7 @@ body {
   }
   
   #about .about-container p {
-    line-height: 26px;
+    line-height: 50px;
   }
   
   #about .about-container p:last-child {
@@ -555,7 +555,7 @@ body {
   
   #about .about-container .icon-box .icon i {
     color: #2dc997;
-    font-size: 24px;
+    font-size: 100px;
   }
   
   #about .about-container .icon-box .title {
