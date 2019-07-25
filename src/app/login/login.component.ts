@@ -12,7 +12,6 @@ export class LoginComponent implements OnInit {
   constructor(private us:UsersService) { }
   ngOnInit() {
   }
-  register(){
-    this.us.signIn(this.email,this.psw)
-  }
-}
+  signIn(){
+    this.us.signIn(this.email,this.psw);
+  }}

@@ -133,14 +133,14 @@ export class UsersService {
       console.log(obj);
       this
         .http
-        .post(`${this.url}/signin`,obj)
+        .post(`${this.url1}/signin`,obj)
         .subscribe((res:any) => {
           if(res.message){
             alert(res.message);
           }
           else{
-
-            this.router.navigateByUrl(`/dashboard/${res._id}`);
+ 
+            this.router.navigateByUrl(`/contact`);
           }
         });
     }

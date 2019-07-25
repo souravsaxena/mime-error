@@ -92,9 +92,9 @@ router.get('/delete/:id',(req,res)=>{
 
 
 /////////////////////////////////////////////////////signin//////////////////////////////////////////////////////
-router.post('/signIn',(req,res)=>{
+router.post('/signin',(req,res)=>{
     const email = req.body.email;
-    const psw = req.body.psw;
+    const password = req.body.psw;
     console.log(email)
     UserRegister.findOne({
         email:email
@@ -107,7 +107,7 @@ router.post('/signIn',(req,res)=>{
             if(user == null ){
               res.json({message:"Check your Credentials"});
             }
-            else if (user.psw != psw){
+            else if (user.password != password){
                 res.json({message:"Check your password"});
             }
             else{
@@ -117,38 +117,38 @@ router.post('/signIn',(req,res)=>{
     })
 })
 /////////////////////getdatabyid/////////////////////////////////////
-router.get('/getbyid/:id',(req,res)=>{
-    let id = req.params.id;
-    UserRegister.findOne({
-        _id:id
-    },(err,user)=>
-    {
-        if(err){
-            console.log(err);
-        }
-        else{
-            if(user==null)
-            {
-                res.json({message:"Does not exist"});
-            }
-            else{
-                res.json(user);
-            }
-        }
-    })
-})
+// router.get('/getbyid/:id',(req,res)=>{
+//     let id = req.params.id;
+//     UserRegister.findOne({
+//         _id:id
+//     },(err,user)=>
+//     {
+//         if(err){
+//             console.log(err);
+//         }
+//         else{
+//             if(user==null)
+//             {
+//                 res.json({message:"Does not exist"});
+//             }
+//             else{
+//                 res.json(user);
+//             }
+//         }
+//     })
+// })
 
 
 router.post('/addRegister',function(req,res){
     const psw=req.body.psw
     const email=req.body.email
     const pswrepeat=req.body.pswrepeat
-   
-    new UserRegister({
-        psw:psw,
-        
-        email:email,
-        pswrepeat:pswrepeat
+   console.log(req.body.psw,psw)
+
+   new UserRegister({
+   email:email,
+        password:psw,
+        // pswrepeat:pswrepeat
         
     }).save(function(err,data){
         if(err){
