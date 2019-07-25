@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-let user = new Schema({
+let Contact = new Schema({
     fname: {
         type: String
     },
@@ -14,4 +14,4 @@ let user = new Schema({
   
 },
 );
-module.exports = mongoose.model('User', user); 
+module.exports = mongoose.model('contact', Contact); 

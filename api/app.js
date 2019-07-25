@@ -4,6 +4,8 @@ const mongoose  = require('mongoose');
 const bodyParser = require ('body-parser');
 
 const userRoute=require('./routes/users')
+const userRoute1=require('./routes/user1')
+
 // const config = require('./config/database');
 
 // app.use(function(req, res, next) {
@@ -35,6 +37,7 @@ app.use(function(req, res, next) {
 // const userTestRoutes = require('./api/routes/userstest');
 
 app.use('/user',userRoute);
+app.use('/user1',userRoute1);
 
 
 mongoose.connect('mongodb://localhost:27017/LHM',{ useNewUrlParser: true },()=>console.log("Db Connected"))

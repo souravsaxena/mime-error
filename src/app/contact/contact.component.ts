@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import {UserService} from '../user.service';
+import {UsersService} from '../user.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,17 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  // name;
-  // email;
-  // subject;
+  fname;
+   lname;
+  subject;
   // message;
-  //constructor(private ud:UserService) { }
-  constructor(){}
+  constructor(private us:UsersService) { }
   ngOnInit() {
   }
   
-  // addData(){
-  //   this.ud.addData(this.name,this.email,this.message,this.subject)
-  // }
+   addData(){
+     this.us.addData(this.fname,this.lname,this.subject)
+   }
 
 }
